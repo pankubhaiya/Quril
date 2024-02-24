@@ -84,13 +84,11 @@ const Home = () => {
       formDataToSend.append("firstname", formData.firstName);
       formDataToSend.append("lastname", formData.lastName);
       formDataToSend.append("dob", formData.dob);
-      formDataToSend.append("address", formData.residentialAddress);
+      formDataToSend.append("address", `${formData.residentialAddress} ${formData.residentialAddress2}`);
       formDataToSend.append("email", formData.email);
       formDataToSend.append(
         "conforgaddress",
-        formData.sameAsResidential
-          ? formData.residentialAddress
-          : formData.permanentAddress
+        `${formData.permanentAddress} ${formData.permanentAddress2} `
       );
 
       // Append files
