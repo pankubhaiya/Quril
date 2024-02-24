@@ -3,7 +3,7 @@ const path= require('path')
 
 // Define the file storage and type filter using Multer
 const storage = multer.diskStorage({
-  destination: "./uploads", // Define your file upload destination
+  destination: "./uploads", 
   filename: (req, file, callback) => {
       callback(null, "_" + Date.now() + file.originalname);
   }

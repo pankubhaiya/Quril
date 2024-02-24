@@ -45,7 +45,7 @@ FileRouter.post(
         };
         uploadedFiles.push(documentData);
         // Remove uploaded file from disk
-        fs.unlinkSync(file.path);
+        // fs.unlinkSync(file.path);
       }
       const uploadedFile = new fileModel({
         firstname: firstname,

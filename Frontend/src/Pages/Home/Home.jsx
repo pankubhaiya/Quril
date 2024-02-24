@@ -261,7 +261,7 @@ const Home = () => {
         </div>
         <div className="form-row">
           <div>
-            <label htmlFor="permanentAddress">Street 1</label>
+            <label htmlFor="permanentAddress" >Street 1 {formData.sameAsResidential?"":<span style={{color:"red"}}>*</span>}</label>
             <input
               type="text"
               id="permanentAddress"
@@ -273,7 +273,7 @@ const Home = () => {
             />
           </div>
           <div>
-            <label htmlFor="permanentAddress2">Street 2</label>
+            <label htmlFor="permanentAddress2">Street 2 {formData.sameAsResidential?"":<span style={{color:"red"}}>*</span>}</label>
             <input
               type="text"
               id="permanentAddress2"
@@ -292,7 +292,7 @@ const Home = () => {
         <div>
           <div className="uplodeform">
             <div>
-              <label htmlFor="fileName">fileName <span style={{color:"red"}}>*</span></label>
+              <label htmlFor="fileName">fileName  </label>
               <input
                 type="text"
                 id="fileName"
