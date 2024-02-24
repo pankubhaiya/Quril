@@ -292,7 +292,7 @@ const Home = () => {
         <div>
           <div className="uplodeform">
             <div>
-              <label htmlFor="fileName">fileName  </label>
+              <label htmlFor="fileName">fileName  <span style={{color:"red"}}>*</span></label>
               <input
                 type="text"
                 id="fileName"
