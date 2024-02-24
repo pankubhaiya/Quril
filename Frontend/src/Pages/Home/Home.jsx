@@ -352,7 +352,7 @@ const Home = () => {
           {formData.documents.slice(1).map((document, index) => (
             <div key={index} className="uplodeform">
               <div>
-                <label htmlFor="fileName">fileName *</label>
+                <label htmlFor="fileName">fileName <span style={{color:"red"}}>*</span></label>
                 <input
                   type="text"
                   name="fileName"
